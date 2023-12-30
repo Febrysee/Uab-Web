@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOKO FEBRI</title>
+    <style> 
+
+        body {
+            background-color: rgb(205, 207, 196);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #333;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+  
+        style {
+          border-collapse: collapse;
+          width: 5%;
+          margin-bottom: 20px;
+        }
+        table,
+      th,
+      td {
+        border: 2px solid rgb(11, 1, 1);
+        padding: 10px;
+        text-align: center;
+      }
+
+      form {
+        padding: 20px;
+        border-radius: 5px;
+      }
+
+      input[type="text"],
+      input[type="number"] {
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2px solid rgb(87, 9, 231);
+        box-sizing: border-box;
+      }
+      button[type="SUBMIT"] {
+        width: 60%;
+        background-color: rgb(73, 13, 239);
+        color: rgb(242, 241, 247);
+        padding: 13px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+      }
+
+      button[type="SUBMIT"]:hover {
+        opacity: 0.8;
+      }
+  
+</style>
+  </head>
+  <body>
+    <h1>PLATFOM TRANSAKSI TOKO FEBRI</h1>
+
+    <h2>=====Data Barang======>
+    <table
+      id="BarangTable"
+      style="width:50%; margin-left: auto; margin-rigt: auto"
+    >
+      <tr>
+        <th>kode </th>
+        <th>Nama Barang</th>
+        <th>Harga</th>
+      </tr>
+    </table>
+    <h2>Input Transaksi</h2>
+    <form 
+        onsubmit="tambahTransaksi(event)" 
+        style=" 
+        background-color: rgba(230,
+    234, 224, 0.8); padding: 20; 
+         border-radius: 5px; 
+         "
+
+label form="kodeInput">Kode Barang:</label>
+<input
+  type="text"
+  id="kodeInput"
+  placeholder="Masukan Kode Jumlah Barang"
+  
+/>
+<label for="quantityInput">Jumlah:</label>
+<input
+  type="number"
+  id="quantityInput"
+ min="1";
+ placeholder="Masukan Jumbla Barang"
+/>
+<button type="SUBMIT">SUBMIT</button>
+</form>
+
+<script> src=Transaksi.js</script>
+</body>
+</html>
